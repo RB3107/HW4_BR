@@ -13,7 +13,7 @@ int ReadInt(string message)
 }*/
 
 //Задача 27: Напишите программу, которая принимает на вход число и выдаёт сумму цифр в числе.
-int number = ReadInt("Введите число: ");
+/*int number = ReadInt("Введите число: ");
 int len = NumberLen(number);
 SumNumbers(number, len);
 int ReadInt(string message)
@@ -40,4 +40,5 @@ void SumNumbers(int n, int len)
         n /= 10;
     }
     Console.WriteLine(sum);
-}
+}*/
+//Задача 25: Напишите цикл, который принимает на вход два числа (A и B) и возводит число A в натуральную степень B.
