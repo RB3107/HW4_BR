@@ -1,5 +1,5 @@
 ﻿//Задача 29: Напишите программу, которая задаёт массив из 8 элементов и выводит их на экран.
-int lenArray = ReadInt("Введите длинну массива: ");
+/*int lenArray = ReadInt("Введите длинну массива: ");
 int[] randomArray = new int[lenArray];
 for (int i = 0; i < randomArray.Length; i++)
 {
@@ -10,4 +10,34 @@ int ReadInt(string message)
 {
     Console.Write(message);
     return Convert.ToInt32(Console.ReadLine());
+}*/
+
+//Задача 27: Напишите программу, которая принимает на вход число и выдаёт сумму цифр в числе.
+int number = ReadInt("Введите число: ");
+int len = NumberLen(number);
+SumNumbers(number, len);
+int ReadInt(string message)
+{
+    Console.Write(message);
+    return Convert.ToInt32(Console.ReadLine());
+}
+int NumberLen(int a)
+{
+    int index = 0;
+    while (a > 0)
+    {
+        a /= 10;
+        index++;
+    }
+    return index;
+}
+void SumNumbers(int n, int len)
+{
+    int sum = 0;
+    for (int i = 1; i <= len; i++)
+    {
+        sum += n % 10;
+        n /= 10;
+    }
+    Console.WriteLine(sum);
 }
